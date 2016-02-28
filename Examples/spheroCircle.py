@@ -1,12 +1,13 @@
 from kulka import Kulka
 import time
+import os
 
 
-ADDR = 'XX:XX:XX:XX:XX:XX'
+ADDR = os.environ["SPHERO"]
 
 
-STEPS = 10
-SPEED = 0x30
+STEPS = 20
+SPEED = 0x40
 SLEEP_TIME = 0.3
 
 
