@@ -1,7 +1,8 @@
 from kulka import Kulka
+import os
 
 
-ADDR = 'XX:XX:XX:XX:XX:XX'
+ADDR = os.environ["SPHERO"]
 
 
 with Kulka(ADDR) as kulka:

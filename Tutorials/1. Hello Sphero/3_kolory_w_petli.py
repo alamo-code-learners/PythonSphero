@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from kulka import Kulka
+import os
 
 """
 Sphero jest zawstydzone! Uruchom ten program i zobacz jak kuleczka
@@ -7,7 +8,7 @@ się czerwieni.
 """
 
 
-ADDR = 'XX:XX:XX:XX:XX:XX'
+ADDR = os.environ["SPHERO"]
 
 
 with Kulka(ADDR) as kulka:

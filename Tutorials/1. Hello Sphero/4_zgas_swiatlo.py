@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from kulka import Kulka
+import os
 
 
 """
@@ -12,7 +13,7 @@ from kulka import Kulka
 """
 
 
-ADDR = 'XX:XX:XX:XX:XX:XX'
+ADDR = os.environ["SPHERO"]
 
 
 with Kulka(ADDR) as kulka:

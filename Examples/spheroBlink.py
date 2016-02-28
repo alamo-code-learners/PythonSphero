@@ -1,9 +1,10 @@
 from kulka import Kulka
 import random
 import time
+import os
 
 
-ADDR = 'XX:XX:XX:XX:XX:XX'
+ADDR = os.environ["SPHERO"]
 
 
 def main():

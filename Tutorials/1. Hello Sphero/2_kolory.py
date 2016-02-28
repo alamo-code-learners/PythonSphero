@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 from kulka import Kulka
+import os
 
 
 """
@@ -15,7 +16,7 @@ Teraz spróbuj ustawić własne trzy kolory Sphero!
 # spróbuj różnych kombinacji!
 
 
-ADDR = 'XX:XX:XX:XX:XX:XX'
+ADDR = os.environ["SPHERO"]
 
 
 with Kulka(ADDR) as kulka:

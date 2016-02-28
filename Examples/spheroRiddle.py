@@ -2,6 +2,7 @@ from __future__ import print_function
 from Kulka import Kulka
 from textwrap import dedent
 from random import randint
+import os
 
 try:
     input_ = raw_input
@@ -9,7 +10,7 @@ except NameError:
     input_ = input
 
 
-ADDR = 'XX:XX:XX:XX:XX:XX'
+ADDR = os.environ["SPHERO"]
 
 
 """
